@@ -88,8 +88,8 @@ def time_it(fn, data, repeats):
     return best
 
 
-# Entry point: loads the two CSV files (from the command line or default names), t
-# then checks correctness, tests tricky and random cases, and times both methods.
+# Entry point: loads the two CSV files (from the command line or default names),
+# then checks correctness and times both methods.
 def main():
     main_list = load_pledges(sys.argv[1] if len(sys.argv) > 1 else "Q3_sequence_main.csv")
     check_list = load_pledges(sys.argv[2] if len(sys.argv) > 2 else "Q3_sequence_selfcheck.csv")
